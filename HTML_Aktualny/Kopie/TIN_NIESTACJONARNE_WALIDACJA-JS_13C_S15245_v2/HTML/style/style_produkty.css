@@ -1,0 +1,350 @@
+
+
+#LEWY{
+	width: 30%;
+	height: 600px;
+	display:block;
+	float:left;
+}
+
+.grid-container-lewy{
+
+	height: 600px;
+	display: grid;
+	grid-template-columns: 1% 1% 30% 30% 4% 20% 1%;
+	grid-template-rows: 40px 40px 10px 40px 250px 10px 10px 10px 20px 30px 40px;
+	justify-content: center;
+
+}
+#produkt_sort_select{
+grid-row: 2;
+grid-column: 3/5;
+}
+
+#produkt_sortuj{
+	grid-row: 2;
+	grid-column: 6;
+}
+
+
+#SRODKOWY{
+	width: 40%;
+	height: 600px;
+	display:block;
+	float:left;
+}
+
+.grid-container-srodkowy{
+	height: 600px;
+	display: grid;
+	grid-template-columns: 2% 30% 2% 20% 2% 20% 2% 20% 2%;
+	grid-template-rows: 40px 40px 10px 40px 60px 10px 40px 10px  60px 10px 20px 30px 40px 20px 30px 40px;
+	justify-content: center;
+}
+
+
+#PRAWY{
+	width: 30%;
+	height: 600px;
+	display:block;
+	float:left;
+}
+
+.grid-container-prawy {
+	
+	height: 600px;
+	display: grid;
+	grid-template-columns: 1% 1% 30% 30% 4% 20% 1%;
+	grid-template-rows: 40px 40px 10px 40px 50px 50px 50px 50px 50px 10px 10px 10px 20px 30px 40px;
+	justify-content: center;
+}
+
+
+
+
+/* CSS DO PRODUKTÓW */
+.grid-container {
+	height: 600px;
+	display: grid;
+	grid-template-columns: 1.14% 7.14% 7.14% 7.14% 7.14% 1.14% 10% 10% 10% 10% 7.14% 7.14% 7.14% 1.14%;
+	grid-template-rows: 50px 50px 50px 50px 80px 30px 20px 30px 80px 20px 40px 20px 50px 50px;
+	justify-content: center;
+}
+
+.produkty_lista{
+	grid-row: 4/8;
+	grid-column: 3/5;
+
+}
+
+.lista_produktow{
+width:100%;
+height:100%;
+}
+
+.produkt_wybierz {
+	grid-row: 11;
+	grid-column: 3/5;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_sortuj {
+	grid-row: 2;
+	grid-column: 5/6;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_powrot {
+	grid-row: 15;
+	grid-column: 4/7;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_edytuj{
+		grid-row: 16;
+	grid-column: 6/10;
+	background: white;
+	border: 2px solid black;
+}
+.produkt_dodaj{
+		grid-row: 16;
+	grid-column: 2/5;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_wybierz a, .produkt_powrot a, .produkt_sortuj a, .produkt_edytuj a, .produkt_dodaj a{
+    display: block;
+    float: left;
+    width: 100%;
+	height: 100%;
+    padding-top:15px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.7s ease;
+}
+
+.produkt_wybierz a:hover, .produkt_powrot a:hover, .produkt_sortuj  a:hover, .produkt_edytuj a:hover, .produkt_dodaj a:hover{
+	background:black;
+	border: 5px solid black;
+	color:white;
+	
+}
+
+
+
+.label_wybierzprodukt{
+	grid-row: 1;
+	grid-column: 3/9;
+	text-align: left;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.produkt_sortbox{
+	grid-row: 2;
+	grid-column: 3/5;
+	
+}
+
+
+.produkt_sort_select{
+	width:100%;
+	height:100%;
+}
+
+.zdjecie {
+	grid-row: 1/8;
+	grid-column: 2/9;
+	margin: 10px;
+}
+
+.zdjecie img{
+	
+	float: right;
+	width:auto;
+	height:100%;
+}
+
+.nazwa_wybranego_produktu {
+	grid-row: 2;
+	grid-column: 4/7;
+		text-align: center;
+}
+
+.wybrane_produkty_label{		
+	grid-row: 3;
+	grid-column: 4/7;
+	text-align: center;
+}
+
+.produkty_weglowodany{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 2;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_bialko{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 4;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_tluszcze{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 6;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_kcal{
+	grid-row: 5/5;
+	grid-column: 8;
+	text-align: center;
+	padding-top:10px;
+}
+
+.wybrane_produkty_label_nowa_wartosc{
+	grid-row: 7;
+	margin-top:10%;
+	grid-column: 2;
+	text-align: center;
+}
+
+.produkty_gram_przelicznik {
+	grid-row: 7;
+	grid-column: 4;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.produkty_gram_przelicznik input{
+
+width: 100%;
+height: 100%;
+	text-align: center;
+}
+
+.produkty_gram_przelicznik_submit {
+		grid-row: 7;
+	grid-column: 6;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 2px;
+	margin-right: 2px;
+
+}
+.produkty_gram_przelicznik_submit input{
+	
+width: 100%;
+height: 100%;
+	text-align: center;
+}
+
+
+
+.produkty_weglowodany_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 2;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_bialko_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 4;
+	text-align: center;
+	border-right: 2px solid black;
+}
+.produkty_tluszcze_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 6;
+	text-align: center;
+	border-right: 2px solid black;
+}
+.produkty_kcal_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 8;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+#wybierz_label_error {
+	grid-row: 10;
+	grid-column: 3/5;
+}
+
+#produkty_gram_przelicznik_error {
+	color:red;
+	grid-row: 7;
+	grid-column: 8;
+	text-align: left;
+	margin-top: 5px;
+}
+
+
+.error{
+	text-align: center;
+	color:red;
+	visibility: hidden;
+}
+
+
+@media (max-width:1000px){
+
+	#LEWY{
+		width: 100%;
+		height: 600px;
+		display:block;
+		float:left;
+	}
+	#PRAWY{
+		width: 100%;
+		height: 300px;
+		display:block;
+		float:left;
+	}
+	#SRODKOWY{
+		width: 100%;
+		height: 600px;
+		display:block;
+		float:left;
+	}
+	.zdjecie {
+		grid-row: 1/8;
+		grid-column: 4;
+		margin: 10px;
+	}
+	
+	.zdjecie img{
+		
+		width: auto;
+		height: 100%;
+
+	}
+	
+.produkt_powrot {
+	grid-row: 8;
+	grid-column: 5/9;
+	background: white;
+	border: 2px solid black;
+}
+
+}

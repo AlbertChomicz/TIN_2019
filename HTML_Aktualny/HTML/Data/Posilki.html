@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator kalorii</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../style/style_posilki.css">
+	<link rel="stylesheet" href="../style/style.css">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+
+		<div class="header">
+			<div class="fota">
+				<img id="ananasy" src="../img/logo.jpg" alt="ananasy - header" />
+			</div>
+			<div class="tytul">
+				<h1>Kalkulator Kalorii</h1>
+			</div>
+
+			<div class="logowanie">
+				<form class="formularz">
+					Zalogowany: Mariusz Pudzianowski<br>
+
+					<br>
+				</form>
+			</div>
+
+		</div>
+
+		<nav>
+			<a class="menu" href="../Data/glowna.html">Główna</a><a class="menu"
+				href="../Data/Produkty.html">Produkty</a><a class="menu" href="../Data/Posilki.html">Posiłki</a><a
+				class="menu" href="../Data/Przepisy.html">Przepisy</a><a class="menu"
+				href="../Data/Zapotrzebowanie_kaloryczne.html">Zapotrzebowanie kaloryczne</a><a class="menu"
+				href="../Data/pomysl_dnia.html">Pomysł dnia!</a><a class="menu"
+				href="../Data/Artykuly.html">Artykuły</a>
+
+		</nav>
+
+		<section>
+			<article>
+				<br>
+				<a class="bread_crump" href="../Data/glowna.html"> Główna -> </a>
+				<a class="bread_crump" href="../Data/Posilki.html">Posilki </a>
+				<br>
+				<br>
+
+
+
+				<div class="grid-container">
+
+					<div class="label_wybierzposilek">Posortuj posilki:</div>
+
+					<div class="checkbox1">
+						<input type="checkbox"> Moje posiłki<br>
+						<input type="checkbox"> Wszystkie posiłki<br>
+					</div>
+
+					<div class="produkt_sortbox">
+
+						<select class="produkt_sort_select">
+							<option value="data_utworzenia">Data Utworzenia</option>
+							<option value="nazwa">Nazwa</option>
+							<option value="kcal">KCAL/100g</option>
+						</select>
+
+					</div>
+
+					<div class="produkt_sortuj">
+						<a href="../Data/Posilki.html">Sortuj</a>
+					</div>
+
+					<div class="posilki_lista">
+
+						<select class="lista_posilkow" id="lista_posilkow" multiple>
+							<option value="m">Cukinia z mięsem</option>
+							<option value="l">Devolay z ziemniakami</option>
+							<option value="y">Jajecznica z boczkiem</option>
+							<option value="m">Kurczak w pięciu smakach</option>
+							<option value="l">Schabowy z ziemniakami</option>
+							<option value="m">Spaghetti</option>
+							<option value="l">Wieprzowina z kuskusem</option>
+							<option value="y">Roladki wołowe</option>
+						</select>
+					</div>
+					<div class="produkt_wybierz">
+						<a id="wybierz" href="#top">Wybierz</a>
+					</div>
+
+					<div id='wybierz_label_error' class="error"> Nie wybrano posiłku </div>
+
+					<div class="produkt_powrot">
+						<a href="../Data/Glowna.html">powrót</a>
+					</div>
+
+					<div class="posilek_dodaj">
+						<a href="../Data/Dodawanie_posilku.html">Dodaj nowy posiłek</a>
+					</div>
+
+					<div class="zdjecie">
+						<img id="000002" src="../img/KurczakWPieciuSmakach.jpg" alt="kurczak w pieciu smakach" />
+					</div>
+					
+					<div class="nazwa_wybranego_posilku">Kurczak w pięciu smakach</div>
+					
+					<div class="produkty">Produkty:
+						<br> Kurczak pierś
+						<br> ryż brązowy
+						<br> mrożone warzywa chińskie
+						<br> sos curry
+						<br> tabasko
+						<br> papryka czerwona
+					</div>
+					
+					<div class="gramatura">Gramatura:
+						<br> 200g
+						<br> 70g
+						<br> 150g
+						<br> 10g
+						<br> 3g
+						<br> 70g
+					</div>
+
+					<div class="wybrany_posilek_makro">Makro składniki:</div>
+
+					<div class="produkty_weglowodany_nowa_wartosc">Węgle: <br><br> 69 </div>
+					<div class="produkty_bialko_nowa_wartosc">Białko: <br><br> 45 </div>
+					<div class="produkty_tluszcze_nowa_wartosc">Tłuszcze: <br><br> 22 </div>
+					<div class="produkty_kcal_nowa_wartosc">kcal <br><br> 678 </div>
+
+					<div class="Przepis"> Przepis: </div>
+					<div class="Przepis_opis">
+						<textarea rows="10" cols="50"> Przygotowanie:
+						Ryż ugotować zgodnie z instrukcją na opakowaniu. Można zagotować wodę w czajniku elektrycznym, żeby było szybciej.
+						Kurczaka pokroić w niezbyt regularną, około 2 cm kostkę. Oprószyć solą, łyżką mąki kukurydzianej i łyżeczką przyprawy 5 smaków. Wymieszać, żeby mąka i przyprawy pokryły wszystkie kawałki. Odstawić.
+						Czosnek drobno posiekać. Imbir obrać i zetrzeć na tarce. Z papryczki chili usunąć pestki i pokroić na cienkie plasterki.
+						Marchew obrać i pokroić w zapałkę. Papryki oczyścić z gniazd nasiennych i pokroić w paseczki.
+						Pora pociąć na 0,5 cm plastry, dymkę na 1 cm kawałki.
+						W szklance utrzeć na pastę dwie łyżki mąki kukurydzianej z jedną łyżeczką przyprawy 5 smaków oraz sosem sojowym i rybnym. Dopełnić zimną wodą i dokładnie wymieszać.
+						Smażenie:
+						Na patelnię wlać olej roślinny i mocno rozgrzać, aż zacznie dymić i skwierczeć. Wrzucić kurczaka (uwaga, pryska) i obsmażyć 3-4 minuty na złoto. Zdjąć z patelni i odłożyć na talerz wyłożony papierowym ręcznikiem kuchennym.
+						Na patelnie wrzucić czosnek, imbir i chili, smażyć 30 sekund, dodać marchew oraz paprykę i smażyć 3 minuty. Następnie dodać por i dymkę, smażyć 1 minutę lub aż por zmięknie.
+						Warzywa zalać sosem, szybko zamieszać i zmniejszyć ogień. Sos zgęstnieje, ale powinien być lekko płynny. Jeśli nie jest, dolać nieco wody. Dołożyć usmażonego kurczaka i gotować jeszcze 2 minuty. Na koniec skropić łyżeczką oleju sezamowego.
+						Podawać z ryżem.
+						Smacznego
+						</textarea>
+					</div>
+
+				</div>
+
+
+			</article>
+		</section>
+
+		<script type="text/javascript" src="../js/posilki.js"></script>
+
+
+		<div class="footer">
+			<div class="podpis">
+				©2019 Alberto MakroMaster. Wszelkie prawa zastrzeżone
+			</div>
+			<div class="linki">
+				<a class="menu" href="../Data/kontakt.html"> Kontakt </a><a class="menu" href="../Data/Regulamin.html">
+					Regulamin </a><a class="menu" href="../Data/polityka_prywatnosci.html"> Polityka Prywatności </a>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>

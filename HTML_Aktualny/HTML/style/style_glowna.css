@@ -1,0 +1,169 @@
+
+/* CSS GLOWNA */
+
+.powitanie {
+	width: 100%;
+	padding: 10px;
+	height: 100px;
+
+}
+
+h2 {
+    text-align: center;    
+    font-size: 30px;
+	border-bottom: 3px solid black;
+    font-family: 'Anton';
+    font: bold;
+    text-align: center;
+	padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+.art{
+	margin:10px;
+	width: 100%;
+	height: 200px;
+	padding-bottom: 10px;
+	border-bottom: 3px solid black;
+	
+}
+
+.naglowek_artykulu{
+	width: 98%;
+	height: 25px;
+	margin-right: 10px;
+	
+}
+
+.zdjecie_artykulu{
+	display: block;
+	float: left;
+	width: 15%;
+	height: 75px;
+	margin: 10px;
+}
+
+.zdjecie_artykulu .zdjecie_wczytane {
+	
+	width: 100%;
+	height: auto;
+}
+
+.tresc_artykulu{
+	width: 68%;
+	height: 175px;
+	
+	display: block;
+	float: left;
+}
+
+.odnosnik_artykulu{
+	width: 14%;
+	margin-top:15px;
+	height: 145px;
+	margin-bottom:15px;
+	display: block;
+	float: left;
+	border-left: 2px solid black;
+}
+
+.odnosnik_artykulu .odnosnik_artykulu_div{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	padding-left: 5px;
+}
+
+
+@media (max-width:800px){
+
+	.art{
+		margin:10px;
+		width: 100%;
+		height: 240px;
+		border-bottom: 2px solid black;
+		
+	}
+ 
+	.naglowek_artykulu{
+		width: 98%;
+		height: 25px;
+		margin-right: 10px;
+		
+	}
+	
+	.zdjecie_artykulu{
+		display: block;
+		float: left;
+		width: 20%;
+		height: 75px;
+		margin: 10px;
+	}
+	
+	.zdjecie_artykulu .zdjecie_wczytane {
+		
+		width: 100%;
+		height: auto;
+	}
+	
+	.tresc_artykulu{
+		width:60%;
+		height: 175px;
+		display: block;
+		float: left;
+	}
+	
+	.odnosnik_artykulu{
+		width: 98%;
+		height: 30px;
+		border-left: 0px solid black;
+		display: block;
+		float: left;
+	}
+	
+	.odnosnik_artykulu .odnosnik_artykulu_div{
+		margin-left: 45%;
+		padding-left: 5px;
+		padding: 0px;
+	}
+
+
+}
+
+
+
+}
+.odnosnik_artykulu a{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+}
+
+
+
+.art h5{
+    text-align: left;    
+	width:100%;
+	height:20px;
+    font-size: 16px;
+
+    font-family: 'Anton';
+    text-align: left;
+	padding-top: 0px;
+    padding-bottom: 4px;
+}
+h6{
+	height: 100%;
+	width: 100%;
+	padding: 20px;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+
+
+
+
+

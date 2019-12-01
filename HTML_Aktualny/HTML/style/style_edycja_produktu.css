@@ -1,0 +1,191 @@
+
+
+
+/* CSS DO EDYCJI PRODUKTOW */
+.grid-container {
+	height: 600px;
+	display: grid;
+	grid-template-columns: 1.14% 7.14% 7.14% 7.14% 7.14% 1.14% 7.14% 7.14% 7.14% 7.14% 7.14% 7.14% 7.14% 1.14%;
+	grid-template-rows: 50px 50px 50px 50px 80px 20px 20px 20px 80px 80px 20px 40px 20px 50px 50px;
+	justify-content: center;
+	border: 2px solid black;
+}
+
+.produkty_lista{
+	grid-row: 4/8;
+	grid-column: 3/5;
+
+}
+
+.lista_produktow{
+width:100%;
+height:100%;
+}
+
+.produkt_wybierz {
+	grid-row: 12;
+	grid-column: 3/5;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_sortuj {
+	grid-row: 2;
+	grid-column: 5/6;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_powrot {
+	grid-row: 12;
+	grid-column: 12;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_edytuj{
+		grid-row: 12;
+	grid-column: 8/10;
+	background: white;
+	border: 2px solid black;
+}
+
+
+.produkt_wybierz a, .produkt_powrot a, .produkt_sortuj a, .produkt_edytuj a{
+    display: block;
+    float: left;
+    width: 100%;
+	height: 100%;
+    padding-top:15px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.7s ease;
+}
+
+.produkt_wybierz a:hover, .produkt_powrot a:hover, .produkt_sortuj  a:hover, .produkt_edytuj a:hover{
+	background:black;
+	border: 5px solid black;
+	color:white;
+	
+}
+
+
+
+.label_wybierzprodukt{
+	grid-row: 1;
+	grid-column: 3/5;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.produkt_sortbox{
+	grid-row: 2;
+	grid-column: 3/5;
+	
+}
+
+
+.produkt_sort_select{
+	width:100%;
+	height:100%;
+}
+
+.zdjecie {
+	grid-row: 3/6;
+	grid-column: 11/13;
+	
+}
+
+.zdjecie img{
+	
+	width:100%;
+	height:100%;
+}
+
+.nazwa_wybranego_produktu {
+	grid-row: 3/6;
+	grid-column: 8/10;
+		text-align: center;
+}
+
+.wybrane_produkty_label{		
+	grid-row: 4/6;
+	grid-column: 8/10;
+	text-align: center;
+}
+
+.produkty_weglowodany{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 7/7;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_bialko{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 8/8;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_tluszcze{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 9;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_kcal{
+	grid-row: 5/5;
+	grid-column: 10;
+	text-align: center;
+	padding-top:10px;
+}
+
+.wybrane_produkty_label_nowa_wartosc{
+	grid-row: 7;
+	grid-column: 7/11;
+	text-align: center;
+}
+.produkty_weglowodany_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 7;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_bialko_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 8;
+	text-align: center;
+	border-right: 2px solid black;
+}
+.produkty_tluszcze_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 9;
+	text-align: center;
+	border-right: 2px solid black;
+}
+.produkty_kcal_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 10;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_weglowodany_nowa_wartosc input, .produkty_bialko_nowa_wartosc input, .produkty_tluszcze_nowa_wartosc input{
+width:100%;
+height:20px;
+}  
+
+

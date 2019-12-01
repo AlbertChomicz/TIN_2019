@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator kalorii</title>
+<link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" href="../style/style_dodanie_produktu.css">
+    <link rel="stylesheet" href="../style/style.css">
+    
+    </head>
+    
+<body>
+
+<div id="wrapper">
+   
+
+	<div class="header">
+		<div class="fota">
+			<img id="ananasy" src="../img/logo.jpg" alt="ananasy - header"/>
+		</div>
+		<div class="tytul">
+		<h1>Kalkulator Kalorii</h1>	
+		</div>
+		
+		<div class="logowanie">
+				<form class="formularz">
+			  Zalogowany: Mariusz Pudzianowski<br>
+		
+			   <br>
+			</form>
+		</div>
+		
+	</div>
+    
+   
+    
+    <nav>
+        <a class="menu" href="../Data/glowna.html">Główna</a><a class="menu" href="../Data/Produkty.html">Produkty</a><a class="menu" href="../Data/Posilki.html">Posiłki</a><a class="menu" href="../Data/Przepisy.html">Przepisy</a><a class="menu" href="../Data/Zapotrzebowanie_kaloryczne.html">Zapotrzebowanie kaloryczne</a><a class="menu" href="../Data/pomysl_dnia.html">Pomysł dnia!</a><a class="menu" href="../Data/Artykuly.html">Artykuły</a>
+        
+    </nav>
+    
+    <section>
+    <article>
+                <br>
+			  <a class="bread_crump" href="../Data/glowna.html"> Główna -> </a>
+			  <a class="bread_crump" href="../Data/produkty.html">Produkty -></a>
+			   <a class="bread_crump" href="../Data/Dodaj_produkt.html">Dodaj produkt </a>
+			  <br>
+			  <br>
+<div class="grid-container">
+  
+		<div class="Dodaj_produkt_label"> Dodaj produkt </div>
+		<div class="nazwa_label"> Nazwa </div>
+		<div class="wegle_label"> Węglowodany/100g</div>
+		<div class="bialko_label"> Białko/100g </div>
+		<div class="tluszcze_label"> Tłuszcze/100g </div>
+		<div class="kategoria_label"> Kategoria </div>
+		<div class="zdjecie_label"> Zdjęcie </div>
+		
+		<div class="error" id="nazwa_label_error"> Błędna nazwa</div>
+		<div class="error" id="wegle_label_error"> maksmalna wartość to 100 </div>
+		<div class="error" id="bialko_label_error"> maksmalna wartość to 100 </div>
+		<div class="error" id="tluszcze_label_error"> maksmalna wartość to 100 </div>
+		<div class="error" id="kategoria_label_error"> brak kategorii </div>
+		<div class="error" id="zdjecie_label_error"> błąd, akceptowalny jest tylko plik JPG </div>
+		<div class="error" id="dodawanie_label_error"> błąd w dodawaniu produktu </div>
+		
+		
+		<div class="nazwa_label_input" > <input id ="nazwa_label_input" class="input"></input> </div> 
+		<div class="wegle_label_input" > <input id ="wegle_label_input" class="input"></input> </div>
+		<div class="bialko_label_input"  > <input id ="bialko_label_input" class="input"></input> </div>
+		<div class="tluszcze_label_input" > <input id ="tluszcze_label_input" class="input"></input> </div>
+		<div class="kategoria_label_input"> 
+		<select id ="kategoria_label_input">
+			<option value="brak_ketegorii">...</option>
+		  <option value="kategoria1">kategoria1</option>
+		  <option value="kategoria2">kategoria2</option>
+		  <option value="kategoria3">kategoria3</option>
+		</select>
+		</div>
+		<div class="zdjecie_label_input">  <input type="file" class="input" id ="zdjecie_label_input" >
+		</input> </div>
+		
+    <div class="produkt_powrot">
+  	<a  href="../Data/Produkty.html" >powrót</a>
+	  </div>
+	  
+	  <div class="produkt_dodaj">
+		<a  id='produkt_dodaj' href="#top" >Dodaj produkt</a>
+	</div>
+	<!--../Data/Dodaj_produkt_komunikat.html-->
+		
+</div>
+
+ </article>
+    </section>
+    <script type="text/javascript" src="../js/dodawanie_produktu.js"></script>
+   <div class="footer">
+		<div class="podpis">
+		©2019 Alberto MakroMaster. Wszelkie prawa zastrzeżone
+		</div>
+   		<div class="linki">
+		 <a class="menu" href="../Data/kontakt.html"> Kontakt </a><a class="menu" href="../Data/Regulamin.html"> Regulamin </a><a class="menu" href="../Data/polityka_prywatnosci.html"> Polityka Prywatności </a>
+		</div>
+  
+   </div>
+   
+</div>
+</body>
+</html>
