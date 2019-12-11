@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator kalorii</title>
+<link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="icon" href="../img/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	  <link rel="stylesheet" href="../style/style_rejestracja.css">
+    <link rel="stylesheet" href="../style/style.css">
+	
+
+    </head>
+    
+<body>
+
+<div id="wrapper">
+   
+
+	<div class="header">
+		<div class="fota">
+			<img id="ananasy" src="../img/logo.jpg" alt="ananasy - header"/>
+		</div>
+		<div class="tytul">
+		<h1>Kalkulator Kalorii</h1>	
+		</div>
+		
+		<div class="logowanie">
+				<form class="formularz">
+			  Zalogowany: Mariusz Pudzianowski<br>
+		
+			   <br>
+			</form>
+		</div>
+		
+	</div>
+    
+   
+    
+    <nav>
+        <a class="menu" href="../Data/glowna.html">Główna</a><a class="menu" href="../Data/Produkty.html">Produkty</a><a class="menu" href="../Data/Posilki.html">Posiłki</a><a class="menu" href="../Data/Przepisy.html">Przepisy</a><a class="menu" href="../Data/Zapotrzebowanie_kaloryczne.html">Zapotrzebowanie kaloryczne</a><a class="menu" href="../Data/pomysl_dnia.html">Pomysł dnia!</a><a class="menu" href="../Data/Artykuly.html">Artykuły</a>
+        
+    </nav>
+    
+    <section>
+    <article>
+                <br>
+			  <a class="bread_crump" href="../Data/glowna.html"> Główna -> </a>
+			  <a class="bread_crump" href="../Data/produkty.html">Produkty -></a>
+			   <a class="bread_crump" href="../Data/Dodaj_produkt.html">Dodaj produkt </a>
+			  <br>
+			  <br>
+<div class="grid-container">
+  
+		<div class="Dodaj_produkt_label"> Rejestracja uzytkownika </div>
+		<div class="nazwa_label"> Imie </div>
+		<div class="wegle_label"> Nazwisko</div>
+		<div class="bialko_label"> e-mail </div>
+		<div class="tluszcze_label"> hasło </div>
+		<div class="haslo_potwierdzenie"> ponów hasło </div>
+		<div class="kategoria_label"> Rok urodzenia </div>
+		<div class="zdjecie_label"> Avatar </div>
+		
+		<div id='nazwa_label_error' class="error"> Pole zbyt krótkie </div>
+		<div id="nazwisko_label_error" class="error"> Pole zbyt krótkie </div>
+		<div id="email_label_error" class="error"> Nieprawidłowa struktura e-mail </div>
+		<div id="haslo_label_error" class="error"> zbyt krótkie hasło </div>
+		<div id="haslo_potwierdzenie_error" class="error">  wprowadzone hasła nie są jednakowe </div>
+		<div id="rok_urodzenia_label_error" class="error"> brak kategorii </div>
+		<div id="zdjecie_label_error" class="error"> błąd w dodawaniu pliku </div>
+		<div id="dodawanie_label_error" class="error"> błąd w dodawaniu produktu </div>
+		
+		
+		<div  class="imie_label_input"> <input id="imie_label_input" class="input"></input> </div> 
+		<div class="nazwisko_label_input"> <input id='nazwisko_label_input' class="input"></input> </div>
+		<div class="email_label_input"> <input id='email_label_input' class="input"></input> </div>
+		<div class="haslo_label_input"> <input id='haslo_label_input' class="input" type="password"></input> </div>
+		<div class="haslo_potwierdzenie_input"> <input  id='haslo_potwierdzenie_input' class="input" type="password"></input> </div>
+		<div class="rok_urodzenia_label_input"> 
+		<select id='rok_urodzenia_label_input' >
+
+		
+		 <option value="kategoria1"> < 1970</option>
+		  <option value="kategoria2">1971</option>
+		  <option value="kategoria3">1972</option>
+		  <option value="kategoria1">1973</option>
+		  <option value="kategoria2">1974</option>
+		  <option value="kategoria3">1975</option>
+		  		  <option value="kategoria1">1976</option>
+		  <option value="kategoria2">1977</option>
+		  <option value="kategoria3">1978</option>
+		  		  <option value="kategoria1">1979</option>
+				  
+		 <option value="kategoria1">1980</option>
+		  <option value="kategoria2">1981</option>
+		  <option value="kategoria3">1982</option>
+		  <option value="kategoria1">1983</option>
+		  <option value="kategoria2">1984</option>
+		  <option value="kategoria3">1985</option>
+		  		  <option value="kategoria1">1986</option>
+		  <option value="kategoria2">1987</option>
+		  <option value="kategoria3">1988</option>
+		  		  <option value="kategoria1">1989</option>
+				  
+		  <option value="kategoria1">1990</option>
+		  <option value="kategoria2">1991</option>
+		  <option value="kategoria3">1992</option>
+		  <option value="kategoria1">1993</option>
+		  <option value="kategoria2">1994</option>
+		  <option value="kategoria3">1995</option>
+		  		  <option value="kategoria1">1996</option>
+		  <option value="kategoria2">1997</option>
+		  <option value="kategoria3">1998</option>
+		  		  <option value="kategoria1">1999</option>
+		  <option value="kategoria2">2000</option>
+		  <option value="kategoria3"> > 2001</option>
+		</select>
+		</div>
+		<div class="zdjecie_label_input"> <input id='zdjecie_label_input' type="file" class="input"  ></input> </div>
+		
+    <div class="produkt_powrot">
+  	<a  href="../Data/Glowna.html" >powrót</a>
+	  </div>
+	  
+	  <div id='dodaj_usera' class="produkt_dodaj">
+		<a id='zarejestruj_sie_link' href="#top" >Zarejestruj się</a>
+	</div>
+	<script type="text/javascript" src="../js/rejestracja.js"></script>
+		
+</div>
+
+ </article>
+    </section>
+    
+   <div class="footer">
+		<div class="podpis">
+		©2019 Alberto MakroMaster. Wszelkie prawa zastrzeżone
+		</div>
+   		<div class="linki">
+		 <a class="menu" href="../Data/kontakt.html"> Kontakt </a><a class="menu" href="../Data/Regulamin.html"> Regulamin </a><a class="menu" href="../Data/polityka_prywatnosci.html"> Polityka Prywatności </a>
+		</div>
+  
+   </div>
+   
+</div>
+</body>
+</html>

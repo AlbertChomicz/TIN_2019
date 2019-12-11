@@ -1,0 +1,252 @@
+
+/* CSS DO POSILKOW */
+.grid-container {
+	height: 1000px;
+	display: grid;
+	grid-template-columns: 1.14% 7.14% 7.14% 7.14% 7.14% 1.14% 7.14% 7.14% 7.14% 7.14% 7.14% 7.14% 7.14% 1.14%;
+	grid-template-rows: 50px 50px 50px 50px 80px 30px 20px 30px 40px 40px 20px 40px 20px 50px 50px 30px 250px 40px 40px; 
+	justify-content: center;
+
+}
+
+.posilki_lista{
+	grid-row: 4/8;
+	grid-column: 3/5;
+
+}
+
+.lista_posilkow{
+width:100%;
+height:100%;
+}
+
+.produkt_wybierz {
+	grid-row: 9;
+	grid-column: 3/5;
+	background: white;
+	border: 2px solid black;
+}
+
+#wybierz_label_error {
+	grid-row: 8;
+	grid-column: 3/5;
+}
+
+.error{
+	color: red;
+	visibility: hidden;
+}
+
+.produkt_sortuj {
+	grid-row: 2;
+	grid-column: 5/6;
+	background: white;
+	border: 2px solid black;
+}
+
+.produkt_powrot {
+	grid-row: 18;
+	grid-column: 12;
+	background: white;
+	border: 2px solid black;
+}
+
+.posilek_dodaj{
+		grid-row: 18;
+	grid-column: 7/10;
+	background: white;
+	border: 2px solid black;
+}
+
+.checkbox1{
+	
+	grid-row: 3;
+	grid-column: 3/5;
+	
+}
+
+
+.produkt_wybierz a, .produkt_powrot a, .produkt_sortuj a, .posilek_dodaj a{
+    display: block;
+    float: left;
+    width: 100%;
+	height: 100%;
+    padding-top:15px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.7s ease;
+}
+
+.produkt_wybierz a:hover, .produkt_powrot a:hover, .produkt_sortuj  a:hover, .posilek_dodaj a:hover{
+	background:black;
+	border: 5px solid black;
+	color:white;
+	
+}
+
+
+
+.label_wybierzposilek{
+	grid-row: 1;
+	grid-column: 3/5;
+	text-align: center;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.produkt_sortbox{
+	grid-row: 2;
+	grid-column: 3/5;
+	
+}
+
+
+.produkt_sort_select{
+	width:100%;
+	height:100%;
+}
+
+.zdjecie {
+	grid-row: 2/7;
+	grid-column: 11/14;
+	
+}
+
+.zdjecie img{
+	
+	width:100%;
+	height:100%;
+}
+
+.nazwa_wybranego_posilku {
+	grid-row: 2;
+	grid-column: 8/10;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.produkty{
+	padding-top:10px;
+	grid-row: 3/6;
+	grid-column: 7/10;
+	text-align: left;
+	border-right: 2px solid black;
+	font-size: 18px;
+	padding-left: 10px;
+}
+
+.gramatura{
+	padding-top:10px;
+	grid-row: 3/6;
+	grid-column: 10;
+	text-align: left;
+	
+	font-size:18px;
+	padding-left: 10px;
+}
+
+.produkty_bialko{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 8/8;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_tluszcze{
+	padding-top:10px;
+	grid-row: 5/5;
+	grid-column: 9;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_kcal{
+	grid-row: 5/5;
+	grid-column: 10;
+	text-align: center;
+	padding-top:10px;
+}
+
+.wybrany_posilek_makro{
+	grid-row: 7/8;
+	grid-column: 8/10;
+	text-align: center;
+}
+
+.produkty_gram_przelicznik {
+	grid-row: 7;
+	grid-column: 8;
+	text-align: center;
+}
+.produkty_gram_przelicznik_submit {
+		grid-row: 7;
+	grid-column: 9;
+	text-align: center;
+
+}
+
+.produkty_gram_przelicznik_error {
+	color:red;
+	grid-row: 7;
+	grid-column: 10;
+	text-align: center;
+}
+
+
+
+.produkty_weglowodany_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9/10;
+	grid-column: 7;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+.produkty_bialko_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9/10;
+	grid-column: 8;
+	text-align: center;
+	border-right: 2px solid black;
+}
+.produkty_tluszcze_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9/10;
+	grid-column: 9;
+	text-align: center;
+	border-right: 2px solid black;
+}
+.produkty_kcal_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 9;
+	grid-column: 10;
+	text-align: center;
+	border-right: 2px solid black;
+}
+
+
+.Przepis{
+	grid-row: 11;
+	grid-column: 3/13;
+	text-align: center;
+}
+
+
+.Przepis_opis{
+	grid-row: 12/18;
+	grid-column: 3/13;
+
+
+}
+
+.Przepis_opis textarea{
+	width:100%;
+	height:100%;
+	font-size: 16px;
+	background: #BBBBBB;
+	border: 3px solid black;
+}

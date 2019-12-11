@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator kalorii</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="../style/style_dodanie_posilku.css">
+	<link rel="stylesheet" href="../style/style.css">
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+
+		<div class="header">
+			<div class="fota">
+				<img id="ananasy" src="../img/logo.jpg" alt="ananasy - header" />
+			</div>
+			<div class="tytul">
+				<h1>Kalkulator Kalorii</h1>
+			</div>
+
+			<div class="logowanie">
+				<form class="formularz">
+					Zalogowany: Mariusz Pudzianowski<br>
+
+					<br>
+				</form>
+			</div>
+
+		</div>
+
+
+
+		<nav>
+			<a class="menu" href="../Data/glowna.html">Główna</a><a class="menu"
+				href="../Data/Produkty.html">Produkty</a><a class="menu" href="../Data/Posilki.html">Posiłki</a><a
+				class="menu" href="../Data/Przepisy.html">Przepisy</a><a class="menu"
+				href="../Data/Zapotrzebowanie_kaloryczne.html">Zapotrzebowanie kaloryczne</a><a class="menu"
+				href="../Data/pomysl_dnia.html">Pomysł dnia!</a><a class="menu"
+				href="../Data/Artykuly.html">Artykuły</a>
+
+		</nav>
+
+		<section>
+			<article>
+				<br>
+				<a class="bread_crump" href="../Data/glowna.html"> Główna -> </a>
+				<a class="bread_crump" href="../Data/posilki.html">Posiłki -></a>
+				<a class="bread_crump" href="../Data/Dodawanie_posilku.html">Dodanie posiłku </a>
+				<br>
+				<br>
+				<div class="grid-container">
+
+					<div class="Dodaj_produkt_label"> Wybierz produkt i określ ilość: </div>
+					<div class="nazwa_posilku_label"> <input id="nazwa_posilku_input" type="input" value="Wprowadź nazwę posiłku"></input> </div>
+					<div class="gramatura_label"> gram </div>
+
+
+					<div id="zdjecie_error" class="error2"> Błąd w dodawaniu zdjęcia! </div>
+					<div id="nazwa_error" class="error2"> Nazwa zbyt krótka </div>
+					<div id="brak_opisu_error" class="error2"> Zbyt krótki opis przygotowania! </div>
+					<div id="gramatura_error" class="error2"> Wprowadzono błędą wartość </div>
+
+					<div class="produkty">Produkty:
+						<br> Kurczak pierś
+						<br> ryż brązowy
+						<br> mrożone warzywa chińskie
+						<br> sos curry
+						<br> tabasko
+						<br> papryka czerwona
+					</div>
+					<div class="gramatura">Gramatura:
+						<br> 200g
+						<br> 70g
+						<br> 150g
+						<br> 10g
+						<br> 3g
+						<br> 70g
+					</div>
+
+					<div class="usuwanie">
+						<br> <button class="button_usuwanie" value="x"><img class="button_usuwanie_img"
+								src="../img/cancel_icon.jpg" /></button>
+						<br> <button class="button_usuwanie" value="x"><img class="button_usuwanie_img"
+								src="../img/cancel_icon.jpg" /></button>
+						<br> <button class="button_usuwanie" value="x"><img class="button_usuwanie_img"
+								src="../img/cancel_icon.jpg" /></button>
+						<br> <button class="button_usuwanie" value="x"><img class="button_usuwanie_img"
+								src="../img/cancel_icon.jpg" /></button>
+						<br> <button class="button_usuwanie" value="x"><img class="button_usuwanie_img"
+								src="../img/cancel_icon.jpg" /></button>
+						<br> <button class="button_usuwanie" value="x"><img class="button_usuwanie_img"
+								src="../img/cancel_icon.jpg" /></button>
+					</div>
+
+
+
+					<div class="label_wybierzprodukt">Posortuj produkty:</div>
+					<div class="produkt_sortbox">
+
+						<select class="produkt_sort_select">
+							<option value="data_utworzenia">Data Utworzenia</option>
+							<option value="nazwa">Nazwa</option>
+							<option value="kcal">KCAL/100g</option>
+						</select>
+
+					</div>
+
+					<div class="produkty_lista">
+
+						<select class="lista_produktow" multiple>
+							<option value="m">Ananas</option>
+							<option value="l">Arbuz</option>
+							<option value="y">Cebula</option>
+							<option value="m">Eklerka</option>
+							<option value="l">Dynia</option>
+							<option value="m">Pomidor</option>
+							<option value="l">Kalafior</option>
+							<option value="y">Mango</option>
+						</select>
+					</div>
+
+					<div class="nazwa_label_input"> <input id="gramatura_input" class="input"></input> </div>
+
+
+					<div class="produkt_powrot">
+						<a href="../Data/Posilki.html">powrót</a>
+					</div>
+
+					<div class="posilek_dodaj" >
+						<a id="posilek_dodaj" href="#top">Dodaj Posiłek</a>
+					</div>
+
+
+					<div class="produkt_dodaj" id="produkt_dodaj">
+						<a href="#top">Dodaj produkt</a>
+					</div>
+
+
+
+					<div class="produkty_weglowodany_nowa_wartosc">Węgle: <br><br> 29 </div>
+					<div class="produkty_bialko_nowa_wartosc">Białko: <br><br> 2.5 </div>
+					<div class="produkty_tluszcze_nowa_wartosc">Tłuszcze: <br><br> 5 </div>
+					<div class="produkty_kcal_nowa_wartosc">kcal <br><br> 195</div>
+
+					<div class="Przepis_opis">
+						<textarea id="przepis_textarea" rows="10" cols="50"> Przygotowanie:
+
+Ryż ugotować zgodnie z instrukcją na opakowaniu. Można zagotować wodę w czajniku elektrycznym, żeby było szybciej.
+Kurczaka pokroić w niezbyt regularną, około 2 cm kostkę. Oprószyć solą, łyżką mąki kukurydzianej i łyżeczką przyprawy 5 smaków. Wymieszać, żeby mąka i przyprawy pokryły wszystkie kawałki. Odstawić.
+Czosnek drobno posiekać. Imbir obrać i zetrzeć na tarce. Z papryczki chili usunąć pestki i pokroić na cienkie plasterki.
+Marchew obrać i pokroić w zapałkę. Papryki oczyścić z gniazd nasiennych i pokroić w paseczki.
+Pora pociąć na 0,5 cm plastry, dymkę na 1 cm kawałki.
+W szklance utrzeć na pastę dwie łyżki mąki kukurydzianej z jedną łyżeczką przyprawy 5 smaków oraz sosem sojowym i rybnym. Dopełnić zimną wodą i dokładnie wymieszać.
+Smażenie:
+Na patelnię wlać olej roślinny i mocno rozgrzać, aż zacznie dymić i skwierczeć. Wrzucić kurczaka (uwaga, pryska) i obsmażyć 3-4 minuty na złoto. Zdjąć z patelni i odłożyć na talerz wyłożony papierowym ręcznikiem kuchennym.
+Na patelnie wrzucić czosnek, imbir i chili, smażyć 30 sekund, dodać marchew oraz paprykę i smażyć 3 minuty. Następnie dodać por i dymkę, smażyć 1 minutę lub aż por zmięknie.
+Warzywa zalać sosem, szybko zamieszać i zmniejszyć ogień. Sos zgęstnieje, ale powinien być lekko płynny. Jeśli nie jest, dolać nieco wody. Dołożyć usmażonego kurczaka i gotować jeszcze 2 minuty. Na koniec skropić łyżeczką oleju sezamowego.
+Podawać z ryżem.
+Smacznego</textarea>
+					</div>
+
+
+					<div class="label_dodajzdjecie">Dodaj zdjęcie:</div>
+					<div class="zdjecie_label_input"> <input id = "zdjecie_label_input" type="file" class="input"></input> </div>
+					<div class="zdjecie">
+						<img id="000002" src="../img/KurczakWPieciuSmakach.jpg" alt="kurczak w pieciu smakach" />
+					</div>
+
+				</div>
+
+			</article>
+		</section>
+
+		<script type="text/javascript" src="../js/dodawanie_posilku.js"></script>
+
+
+		<div class="footer">
+			<div class="podpis">
+				©2019 Alberto MakroMaster. Wszelkie prawa zastrzeżone
+			</div>
+			<div class="linki">
+				<a class="menu" href="../Data/kontakt.html"> Kontakt </a><a class="menu" href="../Data/Regulamin.html">
+					Regulamin </a><a class="menu" href="../Data/polityka_prywatnosci.html"> Polityka Prywatności </a>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>

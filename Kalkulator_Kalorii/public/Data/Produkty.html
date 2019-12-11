@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+	<meta charset='UTF-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator kalorii</title>
+	<link href="https://fonts.googleapis.com/css?family=Anton&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="icon" href="../img/favicon.ico">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../style/style_produkty.css">
+	<link rel="stylesheet" href="../style/style.css">
+
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+
+
+		<div class="header">
+			<div class="fota">
+				<img id="ananasy" src="../img/logo.jpg" alt="ananasy - header" />
+			</div>
+			<div class="tytul">
+				<h1>Kalkulator Kalorii</h1>
+			</div>
+
+			<div class="logowanie">
+				<form class="formularz">
+					Zalogowany: Mariusz Pudzianowski<br>
+
+					<br>
+				</form>
+			</div>
+
+		</div>
+
+		<nav>
+			<a class="menu" href="../Data/glowna.html">Główna</a><a class="menu"
+				href="../Data/Produkty.html">Produkty</a><a class="menu" href="../Data/Posilki.html">Posiłki</a><a
+				class="menu" href="../Data/Przepisy.html">Przepisy</a><a class="menu"
+				href="../Data/Zapotrzebowanie_kaloryczne.html">Zapotrzebowanie kaloryczne</a><a class="menu"
+				href="../Data/pomysl_dnia.html">Pomysł dnia!</a><a class="menu"
+				href="../Data/Artykuly.html">Artykuły</a>
+
+		</nav>
+
+		<section>
+			<article>
+				<br>
+				<a class="bread_crump" href="../Data/glowna.html"> Główna -> </a>
+				<a class="bread_crump" href="../Data/produkty.html">Produkty </a>
+				<br>
+				<br>
+
+
+				<div id="LEWY">
+					<div class="grid-container-lewy">
+
+						<div class="label_wybierzprodukt">Posortuj produkty:</div>
+
+						<div class="produkt_sortuj" id="produkt_sortuj">
+							<a href="../Data/Produkty.html">Sortuj</a>
+						</div>
+
+						<select class="produkt_sort_select" id="produkt_sort_select">
+							<option value="data_utworzenia">Data Utworzenia</option>
+							<option value="nazwa">Nazwa</option>
+							<option value="kcal">KCAL/100g</option>
+						</select>
+
+					
+
+
+						<div class="produkty_lista">
+
+						
+
+							<select class="lista_produktow" id="lista_produktow" multiple>
+								<option value="m" index = 3>Ananas</option>
+								<option value="l">Arbuz</option>
+								<option value="y">Cebula</option>
+								<option value="m">Eklerka</option>
+								<option value="l">Dynia</option>
+								<option value="m">Pomidor</option>
+								<option value="l">Kalafior</option>
+								<option value="y">Mango</option>
+							</select>
+						</div>
+						<div class="produkt_wybierz">
+							<a id="wybierz" href="#bottom">Wybierz</a>
+						</div>
+						<div id='wybierz_label_error' class="error"> Nie wybrano produktu </div>
+					</div>
+				</div>
+
+
+				<div id="SRODKOWY">
+					<div class="grid-container-srodkowy">
+
+
+
+						<div class="nazwa_wybranego_produktu">Ananas</div>
+						<div class="wybrane_produkty_label">Makro składniki na 100g:</div>
+						<div class="produkty_weglowodany" id="produkty_weglowodany">Węglowodany: <br><br> 12 </div>
+						<div class="produkty_bialko" id="produkty_bialko">Białko: <br><br> 1 </div>
+						<div class="produkty_tluszcze" id="produkty_tluszcze" >Tłuszcze: <br><br> 2 </div>
+						<div class="produkty_kcal" id = "produkty_kcal">kcal <br><br> 78</div>
+
+						<div class="wybrane_produkty_label_nowa_wartosc">Ilość gram:</div>
+						<div class="produkty_gram_przelicznik" id="produkty_gram_przelicznik"> <input class="input" id="produkty_gram_input"></input>
+						</div>
+						<div class="produkty_gram_przelicznik_submit" id="produkty_gram_przelicznik_submit">
+							<input type="submit" value="Oblicz"></input>
+						</div>
+						<div class="error" id="produkty_gram_przelicznik_error">Błędna wartość!</div>
+
+						<div class="produkty_weglowodany_nowa_wartosc" id="produkty_weglowodany_nowa_wartosc">Węglowodany: <br><br> 29 </div>
+						<div class="produkty_bialko_nowa_wartosc" id="produkty_bialko_nowa_wartosc" >>Białko: <br><br> 2.5 </div>
+						<div class="produkty_tluszcze_nowa_wartosc" id="produkty_tluszcze_nowa_wartosc" >Tłuszcze: <br><br> 5 </div>
+						<div class="produkty_kcal_nowa_wartosc" id="produkty_kcal_nowa_wartosc" >kcal <br><br> 195</div>
+
+
+						<div class="produkt_edytuj">
+							<a href="../Data/Edytuj.html">Edytuj wybrany produkt</a>
+						</div>
+
+						<div class="produkt_dodaj">
+							<a href="../Data/Dodaj_Produkt.html">Dodaj nowy produkt</a>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div id="PRAWY">
+					<div class="grid-container-prawy">
+
+						<div class="zdjecie">
+							<img id="zdjecie_produktu" src="../img/ananas.jpg" alt="ananas-zdjecie" />
+						</div>
+
+						<div class="produkt_powrot">
+							<a href="../Data/Glowna.html">powrót</a>
+						</div>
+
+
+					</div>
+				</div>
+
+
+<div>  s</div>
+
+
+
+
+
+				<!-- <div class="grid-container">
+						<div class="produkty_lista">
+	
+							<select class="lista_produktow" id="lista_produktow" multiple>
+								<option value="m">Ananas</option>
+								<option value="l">Arbuz</option>
+								<option value="y">Cebula</option>
+								<option value="m">Eklerka</option>
+								<option value="l">Dynia</option>
+								<option value="m">Pomidor</option>
+								<option value="l">Kalafior</option>
+								<option value="y">Mango</option>
+							</select>
+						</div>
+						<div class="produkt_wybierz">
+							<a id="wybierz" href="#top">Wybierz</a>
+						</div>
+						<div id='wybierz_label_error' class="error"> Nie wybrano produktu </div>
+	
+	
+						<div class="produkt_powrot">
+							<a href="../Data/Glowna.html">powrót</a>
+						</div>
+						<div class="produkt_sortuj">
+							<a href="../Data/Produkty.html">Sortuj</a>
+						</div>
+	
+						<div class="produkt_sortuj">
+							<a href="../Data/Produkty.html">Sortuj</a>
+						</div>
+	
+						<div class="produkt_edytuj">
+							<a href="../Data/Edytuj.html">Edytuj wybrany produkt</a>
+						</div>
+	
+	
+						<div class="produkt_dodaj">
+							<a href="../Data/Dodaj_Produkt.html">Dodaj nowy produkt</a>
+						</div>
+	
+	
+	
+						<div class="label_wybierzprodukt">Posortuj produkty:</div>
+						<div class="produkt_sortbox">
+	
+							<select class="produkt_sort_select">
+								<option value="data_utworzenia">Data Utworzenia</option>
+								<option value="nazwa">Nazwa</option>
+								<option value="kcal">KCAL/100g</option>
+							</select>
+	
+						</div>
+						<div class="zdjecie">
+							<img id="000001" src="../img/ananas.jpg" alt="ananas-zdjecie" />
+						</div>
+						<div class="nazwa_wybranego_produktu">Ananas</div>
+						<div class="wybrane_produkty_label">Makro składniki na 100g:</div>
+						<div class="produkty_weglowodany">Węglowodany: <br><br> 12 </div>
+						<div class="produkty_bialko">Białko: <br><br> 1 </div>
+						<div class="produkty_tluszcze">Tłuszcze: <br><br> 2 </div>
+						<div class="produkty_kcal">kcal <br><br> 78</div>
+	
+						<div class="wybrane_produkty_label_nowa_wartosc">Ilość gram:</div>
+						<div class="produkty_gram_przelicznik"> <input class="input" id="produkty_gram_input"></input>
+						</div>
+						<div class="produkty_gram_przelicznik_submit" id="produkty_gram_przelicznik_submit"> <input
+								type="submit" value="Oblicz"></input> </div>
+						<div class="error" id="produkty_gram_przelicznik_error">Błędna wartość!</div>
+	
+						<div class="produkty_weglowodany_nowa_wartosc">Węglowodany: <br><br> 29 </div>
+						<div class="produkty_bialko_nowa_wartosc">>Białko: <br><br> 2.5 </div>
+						<div class="produkty_tluszcze_nowa_wartosc">Tłuszcze: <br><br> 5 </div>
+						<div class="produkty_kcal_nowa_wartosc">kcal <br><br> 195</div>
+	
+					</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+			</article>
+		</section>
+
+		<script type="text/javascript" src="../js/ProductApiCalls.js"></script>	
+		<script type="text/javascript" src="../js/produkty_DataFill.js"></script>
+
+		
+
+		<div class="footer">
+			<div class="podpis">
+				©2019 Alberto MakroMaster. Wszelkie prawa zastrzeżone
+			</div>
+			<div class="linki">
+				<a class="menu" href="../Data/kontakt.html"> Kontakt </a><a class="menu" href="../Data/Regulamin.html">
+					Regulamin </a><a class="menu" href="../Data/polityka_prywatnosci.html"> Polityka Prywatności </a>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>
