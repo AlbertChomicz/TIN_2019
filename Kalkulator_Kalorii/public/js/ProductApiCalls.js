@@ -1,4 +1,8 @@
 const userApiPhotoAdd = 'http://localhost:3000/api/products/photoupload';
+const userApiEditProduct = 'http://localhost:3000/api/products/product_edit';
+var userApiBaseUrl = 'http://localhost:3000/api/products';
+var userApiDeleteProduct = 'http://localhost:3000/api/products';
+
 
 function getProductListCall(callback) {
     const req = new XMLHttpRequest();
@@ -21,18 +25,21 @@ function getProductListCall(callback) {
 
 function addPhotoCall(PhotoData){
 
-
     const req = new XMLHttpRequest;
     req.open('POST', userApiPhotoAdd, true);
     req.send(PhotoData);
-    // fetch(userApiPhotoAdd, {
-    //     method: 'POST',
-    //     body: PhotoData,
-    //   }).then(response => {
-    //     console.log(response);
-    //   })
-
 }
+
+function editProductCall(ProductData){
+    console.log(ProductData)
+    const req = new XMLHttpRequest;
+    req.open('POST', userApiEditProduct, true);
+
+    const ProductDataString = JSON.stringify(ProductData);
+    req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    req.send(ProductDataString);
+}
+
 
 function addProductCall(ProductData) {
     const req = new XMLHttpRequest;
@@ -43,3 +50,12 @@ function addProductCall(ProductData) {
     req.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     req.send(ProductDataString);
 }
+
+function deleteProductCall(id){
+    const req = new XMLHttpRequest;
+    
+    req.open('DELETE', userApiDeleteProduct+`/${id}`, true);
+    req.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
+    req.send(null);
+}
+

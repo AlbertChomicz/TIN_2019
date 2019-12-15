@@ -54,10 +54,9 @@
 				<br>
 				<br>
 
-
-
-				<div class="grid-container">
-
+				<div id="LEWY">
+					
+					
 					<div class="label_wybierzposilek">Posortuj posilki:</div>
 
 					<div class="checkbox1">
@@ -91,55 +90,72 @@
 							<option value="l">Wieprzowina z kuskusem</option>
 							<option value="y">Roladki wołowe</option>
 						</select>
-					</div>
+
+						
 					<div class="produkt_wybierz">
-						<a id="wybierz" href="#top">Wybierz</a>
+						<a id="wybierz" href="#" >Wybierz</a>
 					</div>
 
 					<div id='wybierz_label_error' class="error"> Nie wybrano posiłku </div>
 
-					<div class="produkt_powrot">
-						<a href="../Data/Glowna.html">powrót</a>
+
 					</div>
 
-					<div class="posilek_dodaj">
-						<a href="../Data/Dodawanie_posilku.html">Dodaj nowy posiłek</a>
-					</div>
 
-					<div class="zdjecie">
+				</div>
+				<div id="SRODKOWY">
+					
+					<div class="nazwa_wybranego_posilku" id="nazwa_wybranego_posilku">
+						Kurczak w pięciu smakach</div>
+
+					
+					<div class="produkty">
+						<table class="ingredients-table">
+								<thead>
+									<tr>
+										<th>Produkt</th>
+										<th>Gramatura</th>
+									</tr>
+								</thead>
+							<tbody id="tbody_ingredients">
+									
+							</tbody>
+						</table>
+
+
+									
+
+					<div id="produkty_weglowodany_nowa_wartosc" class="produkty_nowa_wartosc">Węgle: <br><br> 69 </div>
+					<div id="produkty_bialko_nowa_wartosc" class="produkty_nowa_wartosc">Białko: <br><br> 45 </div>
+					<div id="produkty_tluszcze_nowa_wartosc" class="produkty_nowa_wartosc">Tłuszcze: <br><br> 22 </div>
+					<div id="produkty_kcal_nowa_wartosc" class="produkty_nowa_wartosc">kcal <br><br> 678 </div>
+
+
+
+				</div>
+				
+
+
+				</div>
+				<div id="PRAWY">
+
+					<div class="zdjecie" id="zdjecie">
 						<img id="000002" src="../img/KurczakWPieciuSmakach.jpg" alt="kurczak w pieciu smakach" />
 					</div>
 					
-					<div class="nazwa_wybranego_posilku">Kurczak w pięciu smakach</div>
-					
-					<div class="produkty">Produkty:
-						<br> Kurczak pierś
-						<br> ryż brązowy
-						<br> mrożone warzywa chińskie
-						<br> sos curry
-						<br> tabasko
-						<br> papryka czerwona
-					</div>
-					
-					<div class="gramatura">Gramatura:
-						<br> 200g
-						<br> 70g
-						<br> 150g
-						<br> 10g
-						<br> 3g
-						<br> 70g
-					</div>
 
-					<div class="wybrany_posilek_makro">Makro składniki:</div>
+			
 
-					<div class="produkty_weglowodany_nowa_wartosc">Węgle: <br><br> 69 </div>
-					<div class="produkty_bialko_nowa_wartosc">Białko: <br><br> 45 </div>
-					<div class="produkty_tluszcze_nowa_wartosc">Tłuszcze: <br><br> 22 </div>
-					<div class="produkty_kcal_nowa_wartosc">kcal <br><br> 678 </div>
+
+				</div>
+				<div id="DOLNY">
+
+				
+
 
 					<div class="Przepis"> Przepis: </div>
 					<div class="Przepis_opis">
-						<textarea rows="10" cols="50"> Przygotowanie:
+						<textarea rows="10" cols="50" id="textarea_opis"> Przygotowanie:
 						Ryż ugotować zgodnie z instrukcją na opakowaniu. Można zagotować wodę w czajniku elektrycznym, żeby było szybciej.
 						Kurczaka pokroić w niezbyt regularną, około 2 cm kostkę. Oprószyć solą, łyżką mąki kukurydzianej i łyżeczką przyprawy 5 smaków. Wymieszać, żeby mąka i przyprawy pokryły wszystkie kawałki. Odstawić.
 						Czosnek drobno posiekać. Imbir obrać i zetrzeć na tarce. Z papryczki chili usunąć pestki i pokroić na cienkie plasterki.
@@ -155,12 +171,40 @@
 						</textarea>
 					</div>
 
+							
+					<div class="posilek_dodaj">
+						<a href="../Data/Dodawanie_posilku.html">Dodaj nowy posiłek</a>
+					</div>
+
+					<div class="posilek_dodaj">
+						<a href="../Data/Glowna.html">powrót</a>
+					</div>
+
+					<div class="posilek_dodaj">
+						<a  id="edytuj" href="#">edytuj</a>
+					</div>
+
+					
+
 				</div>
+
+				</div>
+
+			
+				
+				
+				
+				
+
+					
+				
 
 
 			</article>
 		</section>
-
+		
+		<script type="text/javascript" src="../js/ProductApiCalls.js"></script>
+		<script type="text/javascript" src="../js/PosilkiApiCalls.js"></script>
 		<script type="text/javascript" src="../js/posilki.js"></script>
 
 

@@ -1,5 +1,5 @@
 
-var userApiBaseUrl = 'http://localhost:2999/api/products';
+var userApiBaseUrl = 'http://localhost:3000/api/products';
 var lista_produktów = document.getElementById('lista_produktow');
 
 var produkty_weglowodany = document.getElementById('produkty_weglowodany');
@@ -15,7 +15,8 @@ var produkty_kcal_nowa_wartosc = document.getElementById('produkty_kcal_nowa_war
 
 var produkty_gram_input = document.getElementById('produkty_gram_input');
 var produkty_gram_przelicznik_submit2 = document.getElementById('produkty_gram_przelicznik_submit');
-
+var produkt_sortuj = document.getElementById('produkt_sortuj');
+var ProductListArray = [];
 var aktualnie_wybrany = null;
 
 function Round(n, k)
@@ -25,24 +26,43 @@ function Round(n, k)
 }
 
 
+produkt_sortuj.onclick = function(){
+  Sortuj();
+  return false;
+}
+
+function Sortuj(){
+  ProductListArray = ProductListArray.sort((a, b) => (a.Name.toLowerCase() > b.Name.toLowerCase()) ? 1 : -1)
+  console.log(ProductListArray);
+  renderProductList(ProductListArray);
+}
+
+
 var wybierz = document.getElementById('wybierz');
 
-getProductListCall(renderProductList);
+getProductListCall(saveProductList);
 
 
-console.log("ladujemy dane")
+
+function saveProductList(ProductList){
+  ProductListArray = ProductList;
+  console.log(ProductList)
+  console.log(ProductListArray)
+  renderProductList(ProductListArray);
+ 
+}
+
+
 
 function renderProductList(ProductList) {
-  console.log("ladujemy dane")
 
     //usuwamy istniejące wiersze z danymi z widoku
-    
     /*
     while (lista_produktów.firstChild) {
         tbodyUsers.removeChild(tbodyUsers.firstChild);
     }
     */
-
+   console.log(ProductList);
     //tworzymy wiersze tabeli z danymi użytkowników na podstawie listy obiektów
     let productsHtml = "";
     ProductList.forEach(p => {
@@ -75,17 +95,18 @@ wybierz.onclick = function(){
     var zaznaczony_element = lista_produktow.options[lista_produktow.selectedIndex].dataset.indexNumber;
 
     console.log(zaznaczony_element)
-    console.log(`http://localhost:2999/api/products/${zaznaczony_element}`)
-   userApiBaseUrl = `http://localhost:2999/api/products/${zaznaczony_element}`;
+    console.log(`http://localhost:3000/api/products/${zaznaczony_element}`)
+   userApiBaseUrl = `http://localhost:3000/api/products/${zaznaczony_element}`;
 
    getProductListCall(uzupelnij_makro_wybranemu_produktowi);
+   
 }
 };
 
 
 function uzupelnij_makro_wybranemu_produktowi(ProductList){
 
-    console.log(ProductList)
+
 
 
     produkty_weglowodany.innerHTML = `Węglowodany: <br><br> ${ProductList.carbo}`;

@@ -27,31 +27,43 @@ class product {
     //które nie będą wyświetlane na liście
     static list() {
         return productExtent;
+
     }
     //edycja obiektu
     static product_edit(product) {
-        //FIXME
+        console.log(product.Name)
+        let id = product.id;
+        
+
+        for( var i = 0; i < productExtent.length; i++){ 
+            if ( productExtent[i].id === id) {
+                productExtent[i].carbo = product.carbo;
+                productExtent[i].protein = product.protein;
+                productExtent[i].fat = product.fat;
+                return productExtent[i];
+            }
+         }
+  
     }
     //usuwanie obiektu po id
     static product_delete(id) {
-        //FIXME
+       let index =  productExtent.findIndex(i => {return i.id == id});
+       console.log(index);
+       console.log(productExtent[id])
+       console.log(id);
+       productExtent.splice(index,1);
     } 
+
     //pobieranie obiektu do widoku szczegółów
     //może być potrzebne pobranie dodatkowych danych
     //np. przez złączenia JOIN w relacyjnej bazie danych
     static product_details(id_in) {
         
-       
-           
             let i = 0;
-            let response = "duppppa";
+            let response = "odpowiedz";
 
             while (i < productExtent.length) {
-             /*   console.log(i)
-                console.log(productExtent[i].id)
-                console.log(id_in)
-                console.log(productExtent[i].id === id_in)
-                */
+
                 if (productExtent[i].id == id_in){
                    response = productExtent[i];
                 }
@@ -71,6 +83,11 @@ class product {
         product.add(new product('Ananas', '12', '3', '4', 'none', '../img/ananas.jpg', null ));
         product.add(new product('Pomidor', '6', '5', '7', 'none', '../img/pomidor.jpg', null ));
         product.add(new product('Marchewka', '4', '2', '1', 'none', '../img/marchewka.jpg', null ));
+        product.add(new product('Fasola', '2', '12', '12', 'none', '../img/fasola.jpg', null ));
+        product.add(new product('kiełbasa', '8', '22', '22', 'none', '../img/kielbasa.jpg', null ));
+        product.add(new product('oregano', '1', '1', '2', 'none', '../img/oregano.jpg', null ));
+        product.add(new product('dynia', '7', '5', '2', 'none', '../img/dynia.jpg', null ));
+        product.add(new product('banan', '10', '4', '4', 'none', '../img/banan.jpg', null ));
     }
 }
 

@@ -158,18 +158,13 @@ height:100%;
 	height:100%;
 }
 
-.zdjecie {
+#zdjecie {
 	grid-row: 1/8;
 	grid-column: 2/9;
 	margin: 10px;
 }
 
-.zdjecie img{
-	
-	float: right;
-	width:auto;
-	height:100%;
-}
+
 
 .nazwa_wybranego_produktu {
 	grid-row: 2;
@@ -306,6 +301,14 @@ height: 100%;
 	visibility: hidden;
 }
 
+#zdjecie_produktu{
+		
+	width: 85%;
+	height: auto;
+
+}
+
+
 
 @media (max-width:1000px){
 
@@ -327,16 +330,12 @@ height: 100%;
 		display:block;
 		float:left;
 	}
-	.zdjecie {
-		grid-row: 1/8;
-		grid-column: 4;
-		margin: 10px;
-	}
 	
-	.zdjecie img{
+	
+	#zdjecie_produktu{
 		
-		width: auto;
-		height: 100%;
+		width: 100px;
+		height: 100px;
 
 	}
 	

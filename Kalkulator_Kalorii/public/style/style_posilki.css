@@ -1,4 +1,35 @@
 
+
+
+#LEWY{
+	margin-left: 10%;
+	display:block;
+	float:left;
+	width: 25%;
+	height: 420px;
+}
+
+#SRODKOWY{
+	display:block;
+	float:left;
+	width: 35%;
+	height: 420px;
+}
+#PRAWY{
+	display:block;
+	float:left;
+	width: 20%;
+	height: 420px;
+}
+#DOLNY{
+	margin-top: 40px;
+	display:block;
+	float:left;
+	width: 100%;
+	height: 200px;
+}
+
+
 /* CSS DO POSILKOW */
 .grid-container {
 	height: 1000px;
@@ -7,22 +38,22 @@
 	grid-template-rows: 50px 50px 50px 50px 80px 30px 20px 30px 40px 40px 20px 40px 20px 50px 50px 30px 250px 40px 40px; 
 	justify-content: center;
 
+
 }
 
 .posilki_lista{
-	grid-row: 4/8;
-	grid-column: 3/5;
-
+	height: 200px;
 }
 
 .lista_posilkow{
-width:100%;
+width:95%;
 height:100%;
 }
 
 .produkt_wybierz {
-	grid-row: 9;
-	grid-column: 3/5;
+	width: 95%;
+	margin: 5px;
+	height: 50px;
 	background: white;
 	border: 2px solid black;
 }
@@ -38,31 +69,44 @@ height:100%;
 }
 
 .produkt_sortuj {
-	grid-row: 2;
-	grid-column: 5/6;
+	
+	display: block;
+	float: left;
+	width: 30%;
+	height: 50px;
+	margin-left: 10px;
 	background: white;
 	border: 2px solid black;
 }
 
 .produkt_powrot {
-	grid-row: 18;
-	grid-column: 12;
+	width: 90%;
+	height: 50px;
+	margin:5%;
 	background: white;
 	border: 2px solid black;
 }
 
 .posilek_dodaj{
-		grid-row: 18;
-	grid-column: 7/10;
+	
+	display:block;
+	float: left;
+	width: 20%;
+	margin-top:2%;
+	margin-left: 10%;
+	height: 50px;
 	background: white;
 	border: 2px solid black;
 }
 
 .checkbox1{
 	
-	grid-row: 3;
-	grid-column: 3/5;
+	margin: 10px;
 	
+}
+
+.checkbox1 input{
+	margin-bottom: 10px;
 }
 
 
@@ -97,8 +141,12 @@ height:100%;
 }
 
 .produkt_sortbox{
-	grid-row: 2;
-	grid-column: 3/5;
+
+	width: 65%;
+	display:block;
+	float: left;
+	height: 50px;
+	margin-bottom: 10px;
 	
 }
 
@@ -109,31 +157,52 @@ height:100%;
 }
 
 .zdjecie {
-	grid-row: 2/7;
-	grid-column: 11/14;
+
+	width: 300px;
+	height: auto;
+	max-height: 400px;
+	margin-top: 25%;
+
+
 	
 }
 
-.zdjecie img{
+#zdjecie img{
 	
 	width:100%;
-	height:100%;
+	height:auto;
+	border: white 2px solid;
+	border-radius:20px 20px;
 }
+
 
 .nazwa_wybranego_posilku {
-	grid-row: 2;
-	grid-column: 8/10;
+
 	text-align: center;
-	font-size: 20px;
+	font-size: 60px;
+	font-weight: 500;
+	margin-bottom: 30px;
 }
 
+.ingredients-table{
+	margin-left:15%; 
+	margin-right:15%;
+	width: 70%;
+	
+}
+
+.ingredients-table tr{
+	text-align: center;
+
+}
 
 .produkty{
+	width: 100%;
 	padding-top:10px;
-	grid-row: 3/6;
-	grid-column: 7/10;
+	grid-row: 2/9;
+	grid-column: 7/11;
 	text-align: left;
-	border-right: 2px solid black;
+
 	font-size: 18px;
 	padding-left: 10px;
 }
@@ -198,40 +267,21 @@ height:100%;
 
 
 
-.produkty_weglowodany_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 9/10;
-	grid-column: 7;
+.produkty_nowa_wartosc{
+	display: block;
+	float: left;
+	
+	width: 25%;
+
+	padding-top:50px;
 	text-align: center;
-	border-right: 2px solid black;
 }
 
-.produkty_bialko_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 9/10;
-	grid-column: 8;
-	text-align: center;
-	border-right: 2px solid black;
-}
-.produkty_tluszcze_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 9/10;
-	grid-column: 9;
-	text-align: center;
-	border-right: 2px solid black;
-}
-.produkty_kcal_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 9;
-	grid-column: 10;
-	text-align: center;
-	border-right: 2px solid black;
-}
 
 
 .Przepis{
-	grid-row: 11;
-	grid-column: 3/13;
+	font-size: 20px;
+	width: 100%;
 	text-align: center;
 }
 
@@ -244,9 +294,66 @@ height:100%;
 }
 
 .Przepis_opis textarea{
-	width:100%;
+	margin-left: 10%;
+	width:80%;
 	height:100%;
 	font-size: 16px;
 	background: #BBBBBB;
 	border: 3px solid black;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1000px){
+
+	#LEWY{
+		width: 100%;
+		height: 420px;
+		display:block;
+		float:left;
+		margin-left: 0px;
+	}
+	#PRAWY{
+		width:100%;
+		height: 420px;
+		display:block;
+		float:left;
+	}
+	#SRODKOWY{
+		width: 100%;
+		height: 500px;
+		display:block;
+		float:left;
+	}
+	#DOLNY{
+		width: 100%;
+		height: 400px;
+		display:block;
+		float:left;
+	}
+
+	#zdjecie {
+		display: block;
+		margin-top:20px;
+		height: 250px;
+		width:50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+#zdjecie img{
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height:250px;
+	width:auto;
+
+}
+
 }

@@ -1,35 +1,101 @@
 
 
 
-/* CSS DO EDYCJI PRODUKTOW */
-.grid-container {
-	width: 100%;
+
+#LEWY{
+	width: 30%;
+	height: 600px;
+	display:block;
+	float:left;
+}
+
+.grid-container-lewy{
+
 	height: 600px;
 	display: grid;
-	grid-template-columns: 4% 4% 4% 4% 4% 4% 3% 3% 3% 3% 3% 3% 3% 3% 4% 4% 4% 4% 8% 4% 1%;
-	grid-template-rows: 40px 40px 40px 40px 5px 40px 5px 40px 40px 40px 40px 40px 40px 5px 40px 5px 40px 5px 40px 5px 40px 5px;
+	grid-template-columns: 1% 1% 30% 30% 4% 20% 1%;
+	grid-template-rows: 40px 40px 10px 40px 250px 10px 10px 10px 20px 30px 40px;
 	justify-content: center;
 
 }
+#produkt_sort_select{
+grid-row: 2;
+grid-column: 3/5;
+}
+
+#produkt_sortuj{
+	grid-row: 2;
+	grid-column: 6;
+}
+#produkt_sortuj a{
+	display: block;
+    float: left;
+    width: 100%;
+	height: 100%;
+    padding-top:5px;
+    font-size: 15px;
+	color: black;
+	background: white;
+	border: 1px solid black;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.7s ease;
+
+}
+
+#SRODKOWY{
+	width: 40%;
+	height: 600px;
+	display:block;
+	float:left;
+}
+
+.grid-container-srodkowy{
+	height: 600px;
+	display: grid;
+	grid-template-columns: 2% 30% 2% 20% 2% 20% 2% 20% 2%;
+	grid-template-rows: 40px 40px 10px 40px 60px 10px 40px 10px  60px 10px 20px 30px 40px 20px 30px 40px;
+	justify-content: center;
+}
+
+
+#PRAWY{
+	width: 30%;
+	height: 600px;
+	display:block;
+	float:left;
+}
+
+.grid-container-prawy {
+	
+	height: 600px;
+	display: grid;
+	grid-template-columns: 1% 1% 30% 30% 4% 20% 1%;
+	grid-template-rows: 40px 40px 10px 40px 50px 50px 50px 50px 50px 10px 10px 10px 20px 30px 40px;
+	justify-content: center;
+}
+
+
 
 .produkty_lista {
-	grid-row: 8/14;
-			grid-column: 2/5;
+	grid-row: 5/8;
+	grid-column: 3/5;
 	
 }
 
-.Dodaj_produkt_label{
+#Dodaj_produkt_label{
 	
-	grid-row: 2;
+	grid-row: 1;
 	grid-column: 2/5;
-		text-align: center;
+	text-align: center;
 	margin-top: 15px;
 	font-size: 20px;
 }
 
 .nazwa_posilku_label{
-		grid-row: 2;
-	grid-column: 7/15;
+	grid-row: 1;
+	grid-column: 2/9;
+	margin-bottom: 10px;
 		text-align: center;
 	
 	font-size: 20px;
@@ -42,11 +108,12 @@
 	
 }
 
+
 .gramatura_label {
-	grid-row: 15;
+	grid-row: 8;
 	grid-column: 5;
 		text-align: center;
-	margin-top: 15px;
+	margin-left: 10px;
 	font-size: 20px;
 }
 .produkty_lista select{
@@ -74,9 +141,10 @@
 }
 
 
-.nazwa_label_input{
-		grid-row: 15;
-		grid-column: 2/5;
+.gramatura_input{
+		grid-row: 8/10;
+		grid-column: 3/5;
+	margin-top: 2px;
 }
 
 #gramatura_input{
@@ -86,25 +154,25 @@
 
 
 .produkt_powrot {
-	grid-row: 17;
-	grid-column: 19;
+	grid-row: 15;
+	grid-column: 3;
 	background: white;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 .posilek_dodaj {
-	grid-row: 13/15;
-	grid-column: 18/20;
+	grid-row: 15;
+	grid-column: 4 ;
 	background: white;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
 
 .produkt_dodaj{
-		grid-row: 17;
-	grid-column: 2/5;
+	grid-row: 11;
+	grid-column: 3/5;
 	background: white;
-	border: 2px solid black;
+	border: 1px solid black;
 }
 
  .produkt_powrot a, .produkt_dodaj a, .posilek_dodaj a{
@@ -122,47 +190,16 @@
 
  .produkt_powrot a:hover, .produkt_dodaj a:hover, .posilek_dodaj a:hover{
 	background:black;
-	border: 5px solid black;
+	border: 1px solid black;
 	color:white;
 	
 }
 
-.produkty_weglowodany_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 15;
-	grid-column: 7/9;
-	text-align: center;
-	border-right: 2px solid black;
-}
-
-.produkty_bialko_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 15;
-	grid-column: 9/11;
-	text-align: center;
-	border-right: 2px solid black;
-}
-.produkty_tluszcze_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 15;
-	grid-column: 11/13;
-	text-align: center;
-	border-right: 2px solid black;
-}
-.produkty_kcal_nowa_wartosc{
-	padding-top:10px;
-	grid-row: 15;
-	grid-column: 13/15;
-	text-align: center;
-	border-right: 2px solid black;
-}
 
 
 .Przepis_opis{
-	grid-row: 10/14;
-	grid-column: 6/17;
-
-
+	grid-row: 10/16;
+	grid-column: 2/9;
 }
 
 .Przepis_opis textarea{
@@ -170,8 +207,40 @@
 	height:100%;
 	font-size: 16px;
 	background: #BBBBBB;
-	border: 3px solid black;
+	border: 1px solid black;
 }
+
+
+.produkty_weglowodany_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 16;
+	grid-column: 2;
+	text-align: center;
+	border-right: 1px solid black;
+}
+
+.produkty_bialko_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 16;
+	grid-column: 4;
+	text-align: center;
+	border-right: 1px solid black;
+}
+.produkty_tluszcze_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 16;
+	grid-column: 6;
+	text-align: center;
+	border-right: 1px solid black;
+}
+.produkty_kcal_nowa_wartosc{
+	padding-top:10px;
+	grid-row: 16;
+	grid-column: 8;
+	text-align: center;
+	border-right: 1px solid black;
+}
+
 
 
 .produkty{
@@ -179,7 +248,7 @@
 	grid-row: 3/10;
 	grid-column: 6/12;
 	text-align: left;
-	border-right: 2px solid black;
+	border-right: 1px solid black;
 	font-size: 18px;
 }
 
@@ -216,7 +285,7 @@ padding-top:10px;
 
 .zdjecie_label_input{
 	grid-row: 3;
-	grid-column: 18/21;
+	grid-column: 4;
 	
 }
 
@@ -226,14 +295,14 @@ padding-top:10px;
 
 .label_dodajzdjecie{
 	
-	grid-row: 2;
-	grid-column: 18/21;
+	grid-row: 1;
+	grid-column: 4;
 	margin-top: 15px;
 }
 
 .zdjecie {
-	grid-row: 4/10;
-	grid-column: 18/21;
+	grid-row: 5/9;
+	grid-column: 3/6;
 	
 }
 
@@ -247,26 +316,26 @@ padding-top:10px;
 
 #zdjecie_error{
 
-	grid-row: 10;
-	grid-column: 18/21;
+	grid-row: 13;
+	grid-column: 3/7;
 }
 
 #nazwa_error{
 
-	grid-row: 11;
-	grid-column: 18/21;
+	grid-row: 10;
+	grid-column: 3/7;
 }
 
 #brak_opisu_error{
 
-	grid-row: 12;
-	grid-column: 18/21;
+	grid-row: 9;
+	grid-column: 3/7;
 }
 
 #gramatura_error{
 
-	grid-row: 18;
-	grid-column: 2/5;
+	grid-row: 10;
+	grid-column: 3/5;
 }
 
 .error2{
@@ -277,4 +346,32 @@ padding-top:10px;
 #nazwa_posilku_input {
 	width:100%;
 	height:100%;
+}
+
+#wybierz_label_error{
+	grid-row: 10;
+    grid-column: 2/5;
+}
+
+
+#tablica_z_wartosciami{
+	grid-row: 2/10;
+	grid-column: 2/9;
+
+}
+
+.ingredients-table{
+
+  width:100%
+  
+}
+
+.ingredients-table tr{
+	text-align: center;
+}
+
+#produkt_usun {
+	grid-row: 15;
+	grid-column: 5/7;
+	visibility: hidden;
 }

@@ -3,7 +3,7 @@ const port = 3000
 const bodyParser = require("body-parser")
 
 
-
+express({ security: { csrf: false } });
 const app = express()
 // parsuje dane typu application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))

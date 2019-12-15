@@ -8,13 +8,11 @@
 	grid-template-columns: 1.14% 7.14% 7.14% 7.14% 7.14% 1.14% 7.14% 7.14% 7.14% 7.14% 7.14% 7.14% 7.14% 1.14%;
 	grid-template-rows: 50px 50px 50px 50px 80px 20px 20px 20px 80px 80px 20px 40px 20px 50px 50px;
 	justify-content: center;
-	border: 2px solid black;
 }
 
 .produkty_lista{
 	grid-row: 4/8;
 	grid-column: 3/5;
-
 }
 
 .lista_produktow{
@@ -43,9 +41,17 @@ height:100%;
 	border: 2px solid black;
 }
 
+#produkt_edytuj{
+	grid-row: 12;
+	grid-column: 7/9;
+}
+
+#produkt_usun{
+	grid-row: 12;
+	grid-column: 9/11;
+}
 .produkt_edytuj{
-		grid-row: 12;
-	grid-column: 8/10;
+	
 	background: white;
 	border: 2px solid black;
 }
